@@ -46,7 +46,7 @@
         "outbound": "socks-out"
       },
 		{
-	 	 "rule_set": "vn-ip",
+	 	 "rule_set": ["vn-ip"],
   		"outbound": "direct"
 		}
     ],
