@@ -23,8 +23,7 @@
       "strict_route": true
     }
   ],
-  "outbounds": [
-    // ...
+  "outbounds": [   
 	{
       "type": "socks",
       "tag": "socks-out",
@@ -41,7 +40,7 @@
       },
       {
         "protocol": "dns",
-        "action": "hijack-dns" //"route" "hijack-dns"
+        "action": "hijack-dns"
       },
       {
         "ip_is_private": true,
