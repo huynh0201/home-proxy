@@ -28,10 +28,10 @@
 	{
       "type": "socks",
       "tag": "socks-out",
-      "server": "minhapple.duckdns.org",
-      "server_port": 10004,
-      "username": "minh",
-      "password": "911911"
+      "server": "huynh0201.io.vn",
+      "server_port": 12001,
+      "username": "huynh0201",
+      "password": "Huynh@0201"
     }
   ],
   "route": {
