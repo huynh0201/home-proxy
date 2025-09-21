@@ -54,8 +54,8 @@
   		{
 	    "tag": "vn-ip",
 	    "type": "remote",
-	    "format": "json",
-	    "url": "https://raw.githubusercontent.com/huynh0201/home-proxy/main/vn-ip.json"
+	    "format": "text",
+	    "url": "https://raw.githubusercontent.com/huynh0201/home-proxy/main/vn-ip.txt"
  		 }
 	],
     "default_domain_resolver": "local",
