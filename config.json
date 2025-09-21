@@ -46,9 +46,11 @@
         "outbound": "socks-out"
       },
 	  {
-		"rule_set": "vn-ip",
-		"outbound": "direct"
-	  }
+	    "tag": "vn-ip",
+	    "type": "remote",
+	    "format": "text",
+	    "url": "https://raw.githubusercontent.com/huynh0201/home-proxy/refs/heads/main/vn-ip.json"
+  		}
     ],
     "default_domain_resolver": "local",
     "auto_detect_interface": true
