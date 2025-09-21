@@ -44,11 +44,7 @@
       {
         "ip_is_private": true,
         "outbound": "socks-out"
-      },
-		{
-	 	 "rule_set": ["vn-ip"],
-  		"outbound": "direct"
-		}
+      }
     ],
 	"rule_set": [
   		{
