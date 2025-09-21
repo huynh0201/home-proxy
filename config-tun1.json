@@ -1,0 +1,58 @@
+{
+  "dns": {
+    "servers": [
+      {
+        "tag": "google",
+        "type": "tls",
+        "server": "8.8.8.8"
+      },
+      {
+        "tag": "local",
+        "type": "udp",
+        "server": "1.1.1.1"
+      }
+    ],
+    "strategy": "ipv4_only"
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "address": ["172.19.0.1/30"],
+      "auto_route": true,
+      //"auto_redirect": true, // On linux
+      "strict_route": true
+    }
+  ],
+  "outbounds": [
+    // ...
+	{
+      "type": "socks",
+      "tag": "socks-out",
+      "server": "minhapple.duckdns.org",
+      "server_port": 10004,
+      "username": "minh",
+      "password": "911911"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "action": "sniff"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns" //"route" "hijack-dns"
+      },
+      {
+        "ip_is_private": true,
+        "outbound": "socks-out"
+      },
+	  {
+		"rule_set": "vn-ip",
+		"outbound": "direct"
+	  }
+    ],
+    "default_domain_resolver": "local",
+    "auto_detect_interface": true
+  }
+}
