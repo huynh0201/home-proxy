@@ -53,7 +53,7 @@
 	    "format": "text",
 	    "url": "https://raw.githubusercontent.com/huynh0201/home-proxy/refs/heads/main/vn-ip.json"
  		 }
-		]
+		],
     "default_domain_resolver": "local",
     "auto_detect_interface": true
   }
